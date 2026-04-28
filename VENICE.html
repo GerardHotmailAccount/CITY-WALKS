@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Starter Template · Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="mystyle.css" rel="stylesheet">
+  </head>
+  <body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">CITY TOURS!</a>
+    
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Explore Our Cities</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              <img src="https://flagcdn.com/w20/it.png" class="me-2">Italy
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="ROME.html">Rome</a></li>
+              <li><a class="dropdown-item" href="VENICE.html">Venice</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              <img src="https://flagcdn.com/w20/fr.png" class="me-2">France
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="PARIS.html">Paris</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              <img src="https://flagcdn.com/w20/es.png" class="me-2">Spain
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="SEVILLA.html">Seville</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              <img src="https://flagcdn.com/w20/pt.png" class="me-2">Portugal
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="PORTO.html">Porto</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+
+    Porto
+     <div class="carousel-item active">
+      <img src="images\venicepic.jpg" alt="Venice" class="d-block w-100">
+              <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+    <div class="post-it-sticky">
+      <div class="red-tape"></div>
+      <p class="mb-0 fw-bold">"Venice is like eating an entire box of chocolate liqueurs in one go. It is an enchanted, watery maze where the streets are made of emerald glass. To wander here is to lose track of time, drifting between grand palaces and secret bridges where the only sound is the water."</p>
+      <span class="small">- Truman Capote, writer</span>
+    </div>
+  </div>
+    </div>
+  </div>
+
+</div>
+
+<main class="container py-5">
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold">Benvenuti a <span class="highlight">Venezia</span> !!!</h1>
+    <p class="lead">Human-led tours that avoid the crowds and the algorithms.</p>
+  </div>
+
+<section id="porto-corkboard" class="full-width-cork py-5">
+    <div class="container">
+        <div class="row g-5 justify-content-center">
+            
+            <div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Venice/doge.jpg', 'Doge\'s Palace')">
+        <div class="pin"></div>
+        <img src="IMAGES/Venice/doge.jpg" class="img-fluid" alt="Doge's Palace">
+        <p class="polaroid-caption">Exploring the opulent residences of the Venetian doges</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Venice/moregondolas.jpg', 'Gondolas')">
+        <div class="pin"></div>
+        <img src="IMAGES/Venice/moregondolas.jpg" class="img-fluid" alt="Gondolas">
+        <p class="polaroid-caption">Sailing through the canals</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Venice/mask.jpg', 'Masked Ball')">
+        <div class="pin"></div>
+        <img src="IMAGES/Venice/mask.jpg" class="img-fluid" alt="Masked Ball">
+        <p class="polaroid-caption">Carnival masks and celebrations</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Venice/sighs.jpg', 'Sighs of Venice')">
+        <div class="pin"></div>
+        <img src="IMAGES/Venice/sighs.jpg" class="img-fluid" alt="Sighs of Venice">
+        <p class="polaroid-caption">A last look from the Bridge of Sighs</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Venice/stmarks.jpg', 'St. Mark\'s Square')">
+        <div class="pin"></div>
+        <img src="IMAGES/Venice/stmarks.jpg" class="img-fluid" alt="St. Mark's Square">
+        <p class="polaroid-caption">Early morning at the Venice Lagoon</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Venice/narrow.jpg', 'Narrow Streets')">
+        <div class="pin"></div>
+        <img src="IMAGES/Venice/narrow.jpg" class="img-fluid" alt="Narrow Streets">
+        <p class="polaroid-caption">Exploring the winding alleys of Venice</p>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</section>
+
+
+</main><!-- /.container -->
+<footer class="footer-dark py-5 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <h3 class="fw-bold text-white mb-3">CITY TOURS!</h3>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold border-bottom pb-2 mb-3">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press / Media</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold border-bottom pb-2 mb-3">Support</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies Settings</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold border-bottom pb-2 mb-3">Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">City Experiences</a></li>
+          <li><a href="#">Devour Tours</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-4 mt-4 border-top">
+      <p>Copyright © 2026 GN Tours LTD - Rockchapel, Cork, Ireland</p>
+    </div>
+  </div>
+</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+ <div class="modal fade" id="photoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content" style="background: transparent; border: none;">
+      <div class="modal-body p-0 text-center">
+        <div class="polaroid-card d-inline-block shadow-lg" style="width: 80vw; max-width: 900px; transform: rotate(0deg); background: white;">
+          <img src="" id="modalImg" class="img-fluid" style="height: auto; max-height: 70vh; padding: 15px;">
+          <p id="modalCaption" class="polaroid-caption fs-2 mt-2" style="padding-bottom: 20px;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal(imgSrc, captionText) {
+    document.getElementById('modalImg').src = imgSrc;
+    document.getElementById('modalCaption').innerText = captionText;
+}
+</script>
+
+<style>
+  .polaroid-card { cursor: pointer; }
+</style>
+
+

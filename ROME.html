@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Starter Template · Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="mystyle.css" rel="stylesheet">
+  </head>
+  <body>
+    
+   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">CITY TOURS!</a>
+    
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Explore Our Cities</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              <img src="https://flagcdn.com/w20/it.png" class="me-2">Italy
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="ROME.html">Rome</a></li>
+              <li><a class="dropdown-item" href="VENICE.html">Venice</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              <img src="https://flagcdn.com/w20/fr.png" class="me-2">France
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="PARIS.html">Paris</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              <img src="https://flagcdn.com/w20/es.png" class="me-2">Spain
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="SEVILLA.html">Seville</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              <img src="https://flagcdn.com/w20/pt.png" class="me-2">Portugal
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="PORTO.html">Porto</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+
+    Porto
+     <div class="carousel-item active">
+      <img src="IMAGES\romapic.jpg" alt="Rome" class="d-block w-100">
+              <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+    <div class="post-it-sticky">
+      <div class="red-tape"></div>
+      <p class="mb-0 fw-bold">"Open my heart and you will see, graved inside of it, 'Italy.' Rome is the city of visible history, where the past and present are tied together in a beautiful, chaotic knot. Every stone has a story, and every alleyway leads to a fountain that has bubbled for centuries."</p>
+      <span class="small">- Robert Browning, poet</span>
+    </div>
+  </div>
+    </div>
+  </div>
+
+</div>
+
+<main class="container py-5">
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold">Benvenuti a <span class="highlight">Roma</span> !!!</h1>
+    <p class="lead">Human-led tours that avoid the crowds and the algorithms.</p>
+  </div>
+
+<section id="porto-corkboard" class="full-width-cork py-5">
+    <div class="container">
+        <div class="row g-5 justify-content-center">
+            
+            <div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Rome/colo.jpg', 'Colosseum')">
+        <div class="pin"></div>
+        <img src="IMAGES/Rome/colo.jpg" class="img-fluid" alt="Colosseum">
+        <p class="polaroid-caption">Avoiding the midday gladiator crowds</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Rome/forum.jpg', 'Roman Forum')">
+        <div class="pin"></div>
+        <img src="IMAGES/Rome/forum.jpg" class="img-fluid" alt="Roman Forum">
+        <p class="polaroid-caption">Golden hour among the ruins</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Rome/trev.jpg', 'Trevi Fountain')">
+        <div class="pin"></div>
+        <img src="IMAGES/Rome/trev.jpg" class="img-fluid" alt="Trevi Fountain">
+        <p class="polaroid-caption">Tossed a coin, naturally</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Rome/trav.jpg', 'Trastevere Streets')">
+        <div class="pin"></div>
+        <img src="IMAGES/Rome/trav.jpg" class="img-fluid" alt="Trastevere Streets">
+        <p class="polaroid-caption">The best Carbonara is hidden here</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Rome/peter.jpg', 'Peter\'s Square')">
+        <div class="pin"></div>
+        <img src="IMAGES/Rome/peter.jpg" class="img-fluid" alt="Peter's Square">
+        <p class="polaroid-caption">Early morning at the Vatican</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="polaroid-card" 
+         data-bs-toggle="modal" 
+         data-bs-target="#photoModal" 
+         onclick="openModal('IMAGES/Rome/navona.jpg', 'Piazza Navona')">
+        <div class="pin"></div>
+        <img src="IMAGES/Rome/navona.jpg" class="img-fluid" alt="Piazza Navona">
+        <p class="polaroid-caption">Artists and overpriced (but worth it) espresso</p>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</section>
+
+
+</main><!-- /.container -->
+<footer class="footer-dark py-5 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <h3 class="fw-bold text-white mb-3">CITY TOURS!</h3>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold border-bottom pb-2 mb-3">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press / Media</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold border-bottom pb-2 mb-3">Support</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies Settings</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold border-bottom pb-2 mb-3">Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">City Experiences</a></li>
+          <li><a href="#">Devour Tours</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-4 mt-4 border-top">
+      <p>Copyright © 2026 GN Tours LTD - Rockchapel, Cork, Ireland</p>
+    </div>
+  </div>
+</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+ <div class="modal fade" id="photoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content" style="background: transparent; border: none;">
+      <div class="modal-body p-0 text-center">
+        <div class="polaroid-card d-inline-block shadow-lg" style="width: 80vw; max-width: 900px; transform: rotate(0deg); background: white;">
+          <img src="" id="modalImg" class="img-fluid" style="height: auto; max-height: 70vh; padding: 15px;">
+          <p id="modalCaption" class="polaroid-caption fs-2 mt-2" style="padding-bottom: 20px;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal(imgSrc, captionText) {
+    document.getElementById('modalImg').src = imgSrc;
+    document.getElementById('modalCaption').innerText = captionText;
+}
+</script>
+
+<style>
+  .polaroid-card { cursor: pointer; }
+</style>
+
+

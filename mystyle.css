@@ -1,0 +1,489 @@
+/* Add your own CSS under here */
+body {
+    background-color: #fdfaf6; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+body::before {
+    content: "";
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/p6.png');
+    opacity: 0.05; pointer-events: none; z-index: 9999;
+}
+
+/* 2. Wobbly 'Human' Buttons (The Anti-AI Look) */
+.btn-human {
+    background-color: #ffca28; /* Warm yellow */
+    border: 2px solid #222;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; /* Wobbly edges */
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+.btn-human:hover {
+    transform: rotate(-1deg) scale(1.05);
+    background-color: #ffb300;
+}
+
+/* 3. Asymmetric Tour Cards */
+.tour-card {
+    border: 2px solid #222;
+    border-radius: 10px 30px 15px 40px / 30px 10px 40px 15px;
+    background: white;
+    box-shadow: 6px 6px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* 4. Rough Notation (Yellow highlighter effect) */
+.highlight {
+    background: linear-gradient(120deg, #fff176 0%, #fff176 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 80%;
+}
+
+/* Make the carousel fit the screen perfectly */
+.carousel-item {
+    height: 80vh; /* 80% of the Viewport Height */
+    min-height: 400px; /* Prevents it from getting too squashed on small phones */
+    background: #000; /* Dark background behind images while loading */
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* This is key: it crops the image instead of stretching it */
+    object-position: center; /* Keeps the middle of the photo in view */
+}
+
+/* Center the caption area over the whole image */
+.carousel-caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* The Post-it Styling */
+.post-it-sticky {
+    position: relative;
+    background: #fffd91; /* Post-it Yellow */
+    color: #333;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+    transform: rotate(-2deg); /* "Human" tilt */
+    border-radius: 2px;
+}
+
+/* The BBC-style Red Tape */
+.red-tape {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 30px;
+    background-color: rgba(220, 53, 69, 0.8); /* Translucent Red */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-dark {
+    background-color: #3b363f; /* The specific dark purple-grey from your image */
+    color: #ffffff;
+}
+
+.footer-dark h6 {
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    border-color: rgba(255,255,255,0.2) !important;
+}
+
+.footer-dark ul li {
+    margin-bottom: 10px;
+}
+
+.footer-dark ul li a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.footer-dark ul li a:hover {
+    color: #ffca28; /* Your brand highlight color */
+    padding-left: 5px; /* Subtle movement effect */
+}
+
+.footer-dark .border-top {
+    border-color: rgba(255,255,255,0.1) !important;
+}
+
+/* Make the dropdown full width */
+.has-megamenu {
+  position: static !important;
+}
+
+.megamenu {
+  width: 100vw;
+  left: 0 !important;
+  right: 0 !important;
+  margin-top: 0;
+  border: none;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Style the links inside the menu */
+.megamenu .dropdown-item {
+  padding: 5px 0;
+  color: #666;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.megamenu .dropdown-item:hover {
+  background: transparent;
+  color: #0d6efd; /* Or your brand blue */
+  padding-left: 5px;
+}
+
+/* Optional: Vertical lines between countries */
+.megamenu .border-start {
+  border-color: rgba(0,0,0,0.05) !important;
+}
+
+/* Fix the dropdown link styling */
+.megamenu .dropdown-item {
+    font-size: 0.9rem;
+    color: #444;
+    padding: 0.4rem 0; /* More space between Rome and Venice */
+    background: transparent !important; /* Removes the blue Bootstrap hover box */
+}
+
+.megamenu .dropdown-item:hover {
+    color: #0d6efd; /* Your brand blue */
+    text-decoration: underline;
+}
+
+/* Align the Flag Icons */
+.megamenu h6 img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 2px; /* Softens the look of the flags */
+}
+
+.megamenu h6 {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Removes the bullet point from navbar items */
+.navbar-nav {
+    list-style: none !important;
+}
+
+/* Specifically target the city tours list item if needed */
+.nav-item {
+    list-style-type: none;
+}
+
+/* 1. Standard State: Outline visible, text clear */
+.navbar .btn-outline-primary {
+    color: #0d6efd; /* Use your specific brand blue */
+    border: 2px solid #0d6efd;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 2. Hover/Active State: Button turns solid blue, text turns white */
+.navbar .btn-outline-primary:hover, 
+.navbar .show > .btn-outline-primary {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+/* 3. The Hover Trigger for the Dropdown */
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Align it perfectly to the navbar */
+    }
+}
+
+.sketch-wrapper {
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sketch-img {
+    /* This makes the white background of your JPGs disappear 
+       into the background of your site! */
+    mix-blend-mode: multiply; 
+    filter: grayscale(100%) contrast(110%);
+    max-height: 250px;
+}
+
+/* Subtle "Hand-placed" tilts */
+.col-md-4:nth-child(1) .sketch-wrapper { transform: rotate(-3deg); }
+.col-md-4:nth-child(2) .sketch-wrapper { transform: rotate(2deg); }
+.col-md-4:nth-child(3) .sketch-wrapper { transform: rotate(-1deg); }
+
+.sketch-wrapper:hover {
+    transform: rotate(0deg) scale(1.1) !important;
+}
+
+/* Container for the whole sketchbook area */
+.bg-light-sketchbook {
+    background-color: #fcfcfc; /* A very light off-white to contrast the main page */
+}
+
+/* The Large Post-it Note */
+.sketchbook-note {
+    background-color: #fff; /* True white, like the paper of the drawings */
+    border-radius: 5px;
+    transform: rotate(1deg); /* Slight natural tilt */
+    transition: transform 0.3s ease;
+}
+
+.sketchbook-note:nth-child(even) {
+    transform: rotate(-1.5deg);
+}
+
+.sketchbook-note:hover {
+    transform: rotate(0deg) scale(1.02); /* Straightens on hover */
+}
+
+/* Red Tape Styling (Same as earlier) */
+.red-tape-left, .red-tape-right {
+    position: absolute;
+    width: 60px; /* Slightly wider tape for a larger note */
+    height: 30px;
+    background-color: rgba(220, 53, 69, 0.85); /* Boosted Bootstrap Red */
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    z-index: 5;
+    transform: rotate(-15deg);
+}
+
+/* Taping the Corners */
+.red-tape-left {
+    top: -10px;
+    left: -15px;
+    border-radius: 3px 0 3px 0; /* Creates that 'torn' edge feel */
+}
+
+.red-tape-right {
+    top: -10px;
+    right: -15px;
+    transform: rotate(15deg);
+    border-radius: 0 3px 0 3px;
+}
+
+/* The Image Content */
+.sketch-content {
+    mix-blend-mode: multiply; /* Keeps the drawing ink and removes the paper white */
+    max-height: 450px; /* Makes the image substantially larger than before */
+    width: auto;
+    filter: grayscale(100%) contrast(110%);
+}
+
+
+/* The Polaroid - Kept crisp and white */
+.polaroid-card {
+    background: #ffffff;
+    padding: 12px 12px 35px 12px;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.15); /* Softer shadow for the light board */
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.polaroid-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    filter: none !important; /* Ensures photos stay bright */
+}
+
+.polaroid-caption {
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 12px;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+/* Bright Red Pin */
+.pin {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(circle at 30% 30%, #ff4d4d, #b30000);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+/* Hover Effect */
+.polaroid-card:hover {
+    transform: scale(1.1) rotate(0deg) !important;
+    z-index: 20;
+    box-shadow: 10px 20px 30px rgba(0,0,0,0.2);
+}
+
+/* 5. The Full-Width Light Corkboard Section */
+.full-width-cork {
+    /* Make sure the filename is exactly what is in your folder */
+    background-image: url('image_656bee.jpg') !important; 
+    background-repeat: repeat !important;
+    background-size: 300px; 
+    background-attachment: scroll;
+    
+    /* This ensures it breaks out of any constraints */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+    padding: 60px 0;
+    border: none;
+    display: block;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.07);
+}
+
+/* Fix for the white background cutting in */
+#porto-corkboard .container {
+    background-color: transparent !important;
+}
+
+body::before {
+    /* ... your other code ... */
+    z-index: -1; /* Changed from 9999 */
+}
+
+.full-width-cork {
+    /* Try this path instead: it looks directly into the IMAGES folder */
+    background-image: url('IMAGES/corkboard.jpg') !important; 
+    background-repeat: repeat;
+    background-size: 400px;
+    
+    /* Keep your existing breakout code below this */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/* --- MOBILE MENU FIX --- */
+@media (max-width: 991px) {
+    /* Forces the megamenu columns to stack vertically */
+    .megamenu .row {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0 !important;
+    }
+
+    .megamenu .col-md-3 {
+        width: 100% !important;
+        border-left: none !important; /* Removes those desktop vertical lines */
+        padding: 10px 0 !important;
+        border-bottom: 1px solid #eee; /* Adds a subtle separator instead */
+    }
+
+    /* Makes the city names easier to read on a phone */
+    .megamenu h6 {
+        padding-left: 15px !important;
+        margin-top: 10px;
+    }
+
+    /* Centers and sizes the 'Tours by City' button for thumbs */
+    #navbarDropdown {
+        margin: 10px 0 !important;
+        width: 100%;
+    }
+}
+
+/* Modern Mobile Navbar Fixes */
+@media (max-width: 991px) {
+    /* Remove the clunky blue button look */
+    .navbar-toggler:focus {
+        box-shadow: none; /* Removes the ugly blue outline when clicked */
+    }
+
+    /* Make the offcanvas menu feel like an app */
+    .offcanvas {
+        width: 80% !important;
+        background-color: #fcfcfc;
+    }
+
+    .offcanvas-body .nav-link {
+        font-size: 1.2rem;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+        color: #333 !important;
+    }
+
+    /* Hide the dropdown arrow since it's now a flat list */
+    .dropdown-toggle::after {
+        display: none;
+    }
+}
+
+/* Add a hover effect for desktop too */
+.nav-link:hover {
+    color: #007bff !important;
+    padding-left: 5px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .post-it-sticky {
+        width: 90% !important;
+        font-size: 0.9rem !important;
+        padding: 15px !important;
+    }
+}
+
+/* DESKTOP HOVER EFFECT */
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Prevents a gap that closes the menu */
+        animation: fadeIn 0.3s ease-in;
+    }
+}
+
+/* MOBILE OFF-CANVAS CLEANUP */
+@media (max-width: 991px) {
+    /* Make the dropdowns always 'open' in the sidebar so it's 1-click */
+    .offcanvas-body .dropdown-menu {
+        display: block;
+        position: static;
+        background: none;
+        border: none;
+        padding-left: 30px; /* Indent the cities under the country */
+    }
+    
+    .offcanvas-body .dropdown-toggle::after {
+        display: none; /* Hide the arrow on mobile to keep it clean */
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
