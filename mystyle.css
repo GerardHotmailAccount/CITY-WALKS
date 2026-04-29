@@ -487,3 +487,25 @@ body::before {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* Contact Form Styling */
+#contactForm .form-control {
+    border: 2px solid #f0f0f0;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+#contactForm .form-control:focus {
+    border-color: #0d6efd; /* Highlights the box when you type */
+    box-shadow: none;
+}
+
+#contactForm .btn-primary {
+    transition: transform 0.2s;
+}
+
+#contactForm .btn-primary:hover {
+    transform: translateY(-3px); /* Subtle lift when hovering */
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+

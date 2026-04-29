@@ -192,13 +192,46 @@
   </div>
 </section>
 
-<form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="eae811f8-58ea-403d-9c5e-2f1f56a3583b">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button type="submit">Submit Form</button>
-</form>
+<!-- START OF NEW CENTERED CONTACT SECTION -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 text-center">
+        
+        <h2 class="fw-bold mb-3">Ready to Walk the Unseen?</h2>
+        <p class="text-muted mb-4">Tell us more about your dream city tour, and we'll help you find the hidden paths.</p>
+
+        <div class="card border-0 shadow-lg p-4 text-start">
+          <!-- KEEPING YOUR WEB3FORMS ACTION AND KEY -->
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="eae811f8-58ea-403d-9c5e-2f1f56a3583b">
+
+            <div class="mb-3">
+              <label for="name" class="form-label fw-bold">Full Name</label>
+              <input type="text" name="name" class="form-control" placeholder="e.g. Marco Polo" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="email" class="form-label fw-bold">Email Address</label>
+              <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label fw-bold">Tell us more...</label>
+              <textarea name="message" class="form-control" rows="4" placeholder="What kind of hidden gems are you looking for?" required></textarea>
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow-sm">Submit Form</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END OF NEW CONTACT SECTION -->
   
 
 
